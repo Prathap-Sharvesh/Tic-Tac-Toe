@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "Raleway",sans-serif;     
+}
+
+body{
+
+    background: linear-gradient(45deg,#1ea6b8,#e92eba);
+    /* background-image: url('/assets/background.jpg'); */
+    background-attachment: fixed;
+
+    background-blend-mode: overlay  ;
+}
+
+
+
+h1{
+  
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 1rem;
+    color: #ffffff;
+}
+.wrapper{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+.container{
+    margin-top: 2rem;
+    width: 70vmin;
+    height: 70vmin;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative; 
+    gap: .2rem;
+    
+}
+
+.icon{
+    width: 22vmin;
+    height: 22vmin;
+    border-radius: .5rem;
+    border: none;
+    color: black;
+    font-size: 50px;
+    opacity: 80%;
+}
+
+
+.icon:hover{
+    transition: 500ms ease-in-out;
+    background:cyan;
+    opacity: 30%;
+}
+
+
+#reset{
+    font-size: 16px;
+    padding: 1.2rem;
+    background:black;
+    color: white;
+    border-radius: .4rem;
+    margin: 1rem auto;
+    position: relative;
+    display: block;
+    justify-content: center;
+}
+
+#reset:hover{
+    background: white;
+    transition: 500ms ease-in-out;
+    color:black;
+}
+
+.result-page{
+    position: absolute;
+    background: linear-gradient(45deg,#2bbee2,#8a073d); 
+    height: 100%;
+    width: 100%;
+    display: flex;
+    z-index:5;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    
+
+}
+.player-turn{
+    font-family: 'Kalam', cursive;
+    display: block;
+    margin: 1rem 15rem;
+    font-size: 28px;
+}
+
+
+.new-game{
+    background: black;
+    color: white;
+    padding:20px;
+    border: none;
+    border-radius:.3rem;
+}
+
+.new-game:hover{
+    background: white;
+    transition: 800ms ease-in-out; 
+    color: black;
+}
+
+.result-page.hide{
+    display: none;
+}
+
+.message{
+    font-size: 40px;
+    color: white;
+}
